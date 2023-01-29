@@ -860,8 +860,7 @@ height: 100%;
   width: 100px;
   font-size: 30px;
 }
-
-
+/*----------------------media*/
 @media screen and (max-width:750px){
 
   body{
@@ -937,10 +936,36 @@ height: 100%;
     align-self: center;
     margin-left: 0;
    }
+
+   .order_t{
+    align-self: flex-start;
+    justify-self: flex-start;
    
+    width: 70%;
+    margin-left: 0;
+  
+   
+  }
+  .produit_t{
+    border-radius: 2px;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 50px;
+  
    
 }
-
+#CurrentPrice{
+  width: 80%;
+  font-size: 100%;
+  font-weight: bold;
+}
+#Taxes{
+  width: 90%;
+  font-size: 100%;
+  font-weight: bold;
+}
+}
+/*----------------------media*/
 .forms{
   display: flex;
   width: 100%;
@@ -1001,7 +1026,8 @@ background-color: yellow;
   width: 100%;
   height: 100%;
   margin-bottom: 0;
-  font-size: 100%;
+  font-size: 110%;
+  font-weight: bold;
   word-wrap: break-word;
 }
 
@@ -1013,7 +1039,7 @@ background-color: yellow;
 }
 
 #Message{
-  width: 100%;
+  width: 95%;
   height: 100px;
   margin-bottom: 20px;
   padding: 2%;
@@ -1033,11 +1059,84 @@ fieldset{
 
 #password{
   width: 50%;
-  height: 60px;
+  height: 50px;
+  border-radius: 8px;
   margin-bottom: 20px;
+  padding: 2%;
+  font-size: 150%;
+  font-weight: bold;
+  align-items: center;
+  justify-items: center;
 }
 
 #submit{
+  display: flex;
   align-self: center;
   justify-self: center;
+  width: 50%;
+  font-size: 115%;
+ 
+}
+
+::placeholder{
+  font-size: 150%;
+}
+
+option{
+  font-size: 140%;
+  align-self: center;
+  justify-self: center;
+  
+}
+
+select{
+  font-size: 100%;
+  align-self: center;
+  justify-self: center;
+  
+}
+
+input[type=number]{
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #d8d8d8;
+  position: relative;
+  text-align: center;
+  font-size: 120%;
+  width: 40%;
+  outline: none;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2050%2067%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222%22%3E%3Cline%20x1%3D%221%22%20x2%3D%2250%22%20y1%3D%2233.5%22%20y2%3D%2233.5%22%20stroke%3D%22%23D8D8D8%22%2F%3E%3Cpolyline%20transform%3D%22translate(25%2020)%20rotate(45)%20translate(-25%20-20)%22%20points%3D%2219%2026%2019%2014%2032%2014%22%20stroke%3D%22%23000%22%2F%3E%3Cpolyline%20transform%3D%22translate(25%2045)%20rotate(225)%20translate(-25%20-45)%22%20points%3D%2219%2052%2019%2039%2032%2039%22%20stroke%3D%22%23000%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border-width: 0px;
+  margin: 0;
+  border-left: 1px solid black;
+  height: 34px;
+  width: 23px;
+  cursor: pointer;
+}
+
+#prix_fc, #prix_f{
+  width: 90%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#CurrentPrice{
+  width: 80%;
+  font-size: 100%;
+  font-weight: bold;
+}
+#Taxes{
+  width: 90%;
+  font-size: 100%;
+  font-weight: bold;
 }

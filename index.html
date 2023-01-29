@@ -330,7 +330,7 @@
         <div class="nom">
             <label for="entry.2005620554"></label>
             <fieldset >
-                <input  placeholder="Ton nom"
+                <input  placeholder="Nom / Prenom"
                         type="text" 
                         name="entry.1640730257" 
                         data-name="LastName" 
@@ -352,7 +352,7 @@
         <div class="coordonee">
             <fieldset>
                 <input 
-                        placeholder="Ton adresse mail" 
+                        placeholder="Adresse mail" 
                         type="email" 
                         name="entry.1045781291" 
                         data-name="Email" 
@@ -361,7 +361,7 @@
               </fieldset>
             <fieldset>
                 <input 
-                        placeholder="Your Phone Number" 
+                        placeholder="Numero de telephone" 
                         type="tel" 
                         name="entry.1065046570" 
                         data-name="Phone" 
@@ -373,7 +373,7 @@
             <fieldset>
                 <label for="entry.1166974658">Choix du procuit: </label>
                 <select name="entry.1166974658" class="produit_t" id="UserProdutc" type="select">
-                  <option value=" ">Choix du produit</option>
+                  <option value=" ">Produits</option>
                   <option value="Netflix">Netflix</option>
                   <option value="Apple store">Apple store</option>
                   <option value="Fortnite Vbuck">Fortnite Vbuck</option>
@@ -401,7 +401,7 @@
             <label for="entry.1375059268">Choix du Prix:</label>
             <fieldset>
                 <select name="entry.1375059268" class="prix" onchange="price()" id="UserPrice" >
-                  <option value=".">Faites votre choix</option>
+                  <option value=".">Prix</option>
                   <option value="10(">10 €</option>
                   <option value="15(">15 €</option>
                   <option value="20(">20 €</option>
@@ -441,9 +441,12 @@
 
         </div>
         <div class="facture" >
-            <h4>Prix total </h4>
-            <h4>+ frais de service </h4>
-            <h5></h5>
+            <h4>Prix </h4>
+            <div class="button-17 pass" id="CurrentPrice" name="entry.1384895702"></div>
+            <h4>Frais de service </h4>
+            <div class="button-17 pass" id="Taxes" name="entry.1384895702"></div>
+            <h5> </h5>
+           
             <label for="prix_f"></label>
             <fieldset>
                 <div class="button-17 pass" 
@@ -460,15 +463,16 @@
           
         <fieldset>
         <input 
-                placeholder="Type your message here...." 
+                placeholder="Informations supplementaires (Par exemple : Pays de la carte)" 
                 data-name="Message" 
                 id="Message" 
                 name="entry.318066957">
         </input>
+    </fieldset>
         <fieldset>
             <div class="password">
               <label for="entry.2066323353">Pin :</label>
-              <input type="text" name="entry.2066323353" placeholder="Create password" id="password" readonly>
+              <input type="text" name="entry.2066323353" placeholder="PIN" id="password" readonly>
           </div>
           </fieldset>
             <input type="submit" class="button-17" value="Commander" id="submit" onclick="genPassword()" >
@@ -601,7 +605,7 @@ select.addEventListener('change', () => select.value === 'black'
         const prix_euro = [13,19,24,30,36,60,118];
         const prix_dollars = [12,15,23,29,34,56,111];
         const prix_rand=[8,14,21,27,34,67];
-
+        const conversion = 1.09;
 
     function price(){
         var choice = document.getElementById("UserPrice");
@@ -611,10 +615,18 @@ select.addEventListener('change', () => select.value === 'black'
         var price, match, price_C, i;
         var flag = 0;
         if(prix[prix.length-1]==='(') {
-            
+           
             match = prix.match(/\d+/);
             price_c = parseInt(match[0]) ;
-
+            if(quantite!=0){
+                document.getElementById("CurrentPrice").innerHTML=(price_c*conversion).toFixed(2) + ' $';
+                document.getElementById("Taxes").innerHTML = "10 % + conversion";
+            }
+            else{
+                document.getElementById("CurrentPrice").innerHTML=0 + ' $';
+                document.getElementById("Taxes").innerHTML = "0";
+            }
+           
             for(i=0;i<arr.length;i++){
 
                 if(price_c === arr[i]){
@@ -623,14 +635,22 @@ select.addEventListener('change', () => select.value === 'black'
             }
 
             price = prix_euro[i];
-            
+           
             
         }
 
         else if(prix[prix.length-1]==='$'){
             match = prix.match(/\d+/);
             price_c = parseInt(match[0]) ;
-
+            if(quantite!=0){
+                document.getElementById("CurrentPrice").innerHTML=price_c + ' $';
+                document.getElementById("Taxes").innerHTML = "10 % + 1$";
+            }
+            else{
+                document.getElementById("CurrentPrice").innerHTML=0 + ' $';
+                document.getElementById("Taxes").innerHTML = "0";
+            }
+           
             for(i=0;i<arr.length;i++){
 
                 if(price_c === arr[i]){
@@ -643,7 +663,14 @@ select.addEventListener('change', () => select.value === 'black'
         else if(prix[prix.length-1]==='Z'){
             match = prix.match(/\d+/);
             price_c = parseInt(match[0]) ;
-
+            if(quantite!=0){
+                document.getElementById("CurrentPrice").innerHTML=(price_c*0.05948839976).toFixed(2) + ' $';
+                document.getElementById("Taxes").innerHTML = "10 % + conversion";
+            }
+            else{
+                document.getElementById("CurrentPrice").innerHTML=0 + ' $';
+                document.getElementById("Taxes").innerHTML = "0";
+            }
             for(i=0;i<arr_rand.length;i++){
 
                 if(price_c === arr_rand[i]){
@@ -657,6 +684,7 @@ select.addEventListener('change', () => select.value === 'black'
         
             price = 0;
         }
+
         document.getElementById("prix_f").innerHTML =price*quantite + ' $';
         document.getElementById("prix_fc").innerHTML =price*quantite*2000 + ' Fc';
     }
