@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSB-homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/48698d6ae0.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="./img/logo_title_bar.png"/>
+   
+</head>
+<body onscroll="price()">
+    <!---------------------------------HEADER-------------------------------------->
+   <div class="header">
+     <!---------------------------------TOP-HEADER---------------------------------->
+       <div class="top_header">
+
+        <div class="left">
+            <i class="imgp fa-solid fa-handshake fa-2xl"></i>
+            <p class="bsb">BSB</p>
+        </div>
+
+        <div class="research_bar">
+            <i class='bx bx-search '></i>
+            <input onclick="alert_t()" id= "search" type="text" name="search" placeholder="Que cherchez-vous?">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li> <a href="#footer_id">About</a></li>
+                <li><a href="./pages/prix.html" target="_blank">Prix</a></li>
+                <li><a href="mailto:lubumbashicorporation25@gmail.com">help</a></li>
+               <li><i  onclick="alert_t()" class='bx bxs-cart-alt bx-sm cart bx-tada-hover'></i></li>
+                <li><img  onclick="alert_t()" class="img" src="./img/user.png" alt=""></li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <!--------------------------------------------MIDDLE-HEADER---------------------------------->
+    <div id="scroll-container">
+        <div id="scroll-text">
+            <span style="margin-right:80px ;"><i style="color:blue" class='bx bxs-badge-check'></i>Brother, Same Business </span>
+            <span style="margin-right:80px ;"><i style="color:blue" class='bx bxs-badge-check'></i>Qualite au rendez-vous</span>
+            <span style="margin-right:80px ;"><i style="color:blue" class='bx bxs-badge-check'></i>Rechargement rapide</span>
+            <span style="margin-right:80px ;"><i style="color:blue" class='bx bxs-badge-check'></i>Paiment securise</span>
+        </div>
+    </div>
+
+ 
+
+    <!-------------------------------- Slideshow container-------------------------------- -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="./img/apple_and_windows_touch_screen_devices-wallpaper-1920x540.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/img/apple_logo_10-wallpaper-1920x600.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./img/naruto_34-wallpaper-1920x540.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="./img/ninja-2.jpg" style="width:100%">
+      </div>
+    <div class="mySlides fade">
+        <img src="./img/frozen_elsa.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img/fortnite_game_iris_skin_outfit-wallpaper-1920x540.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img/netflix.jpg" style="width:100%">
+      </div>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  </div>
+  <!---------------------------------CATEGORIES-------------------------------------->
+  <div class="category">
+
+    <ul>
+        <li class="tab1">AFFINER PAR CATÉGORIE</li>
+        <li class="tab"><i class='bx bx-music'></i> cartes cadeaux musique</li>
+        <li class="tab"><i class='bx bx-devices'></i> cartes cadeaux Apps</li>
+        <li class="tab"> <i class='bx bx-joystick'></i> cartes prepayees jeux videos</li>
+    </ul>
+</div>
+
+   <div class="body">
+  
+        <div class="grid">
+             <!--LEFT-->
+                <div class="left">
+                    <p>Produit Populaires</p>
+                    <div class="box">
+
+                        <div class="stars">
+                                <img class="img" src="./img/netflixpop.jpg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img class="img" src="./img/fifa23 (1).jpg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img class="img" src="./img/popularproductsapplegiftcard.png" alt="">
+                        </div>
+                           <div class="stars">
+                                <img class="img" src="./img/fortnite (1).jpg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img class="img" src="./img/deezer.png" alt="">
+                        </div>
+                        <div class="stars">
+                            <img class="img" src="./img/psn.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <p>carte cadeau musique</p>
+
+                    <div class="product">
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/AppleLogoNoShadow.png" alt=""></div>
+                            <div class="name_card">Apple Music</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/Spotify_ProductCard_29-1.png" alt=""></div>
+                            <div class="name_card">Spotify</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/Amazon_Music_logo.svg.png" alt=""></div>
+                            <div class="name_card">Amazon Music</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/deezer.jpg" alt=""></div>
+                            <div class="name_card">Deezer</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/youtube (1).png" alt=""></div>
+                            <div class="name_card">youtube Music</div>
+                        </div>
+   
+                    </div>
+                    <div class="more_product">
+                        
+                        <span><a href="#footer_id">Plus de produits</a></span>
+                      
+                    </div>
+                    <p>carte cadeau apps</p>
+
+                    <div class="product">
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/steam (1).jpg" alt=""></div>
+                            <div class="name_card">Steam</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/Netflix_ProductCard_.png" alt=""></div>
+                            <div class="name_card">Netflix</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/Microsoft_ProductCard_GiftCard-1.png" alt=""></div>
+                            <div class="name_card">Microsoft</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/Twitch_ProductCard_38-1.png" alt=""></div>
+                            <div class="name_card">Twitch</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/AppleLogoNoShadow.png" alt=""></div>
+                            <div class="name_card">Apple store</div>
+                        </div>
+                        <div class="card">
+                            <div class="img_card"><img class="card_img" src="./img/CR80_POSA_Digital_300dpi.png" alt=""></div>
+                            <div class="name_card">Google Play</div>
+                        </div>
+                    </div>
+                    <div class="more_product">
+                        
+                        <span><a href="#footer_id">Plus de produits</a></span>
+                      
+                    </div>
+                   
+                </div>
+
+                <!--RIGHT-->
+                <div class="right">
+                    <p>suggestion</p>
+               <div class="suggestion">
+                <div class="suggestion_l">
+                    <div class="card_s">
+                        <div class="img_card"><img class="card_img" src="./img/fortnite.jpg" alt=""></div>
+                        <div class="name_card">Fortnite Vbuck</div>
+                    </div>
+                </div>
+
+                <div class="suggestion_r">
+                    <p>Fortnite Vbuck</p>
+                    <p>prix : 13$ </p>
+                    
+                </div>
+               </div>
+               <p>carte cadeau Streams</p>
+               <div class="product">
+               
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/adn.jpg" alt=""></div>
+                    <div class="name_card">ADN</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Netflix_ProductCard_.png" alt=""></div>
+                    <div class="name_card">Netflix</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/crunchyroll.png" alt=""></div>
+                    <div class="name_card">crunchyroll</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Amazon-Prime-Video-Logo.jpg" alt=""></div>
+                    <div class="name_card">Prime video</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/wakanim.jpg" alt=""></div>
+                    <div class="name_card">wakanim</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/disney.png" alt=""></div>
+                    <div class="name_card">Disney +</div>
+                </div>
+            </div>
+
+            <div class="more_product">
+                <span><a href="#footer_id">Plus de produits</a></span>
+            </div>
+            <p>carte cadeau Jeux videos</p>
+
+            <div class="product">
+               
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Playstation_Plus_ProductCard_15-1.jpg" alt=""></div>
+                    <div class="name_card">Playstation PLus</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Playstation_Store_ProductCard_13-1.png" alt=""></div>
+                    <div class="name_card">Carte PSN</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/XBOX_Live_Gold_ProductCard_45-1.png" alt=""></div>
+                    <div class="name_card">Xbox live Gold</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/XBOX_ProductCard_43.png" alt=""></div>
+                    <div class="name_card">Carte Xbox</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Twitch_ProductCard_38-1.png" alt=""></div>
+                    <div class="name_card">Twitch</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Steam_ProductCard_32-01-1.png" alt=""></div>
+                    <div class="name_card">Steam</div>
+                </div>
+
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Nintendo_ProductCard_3-1 (1).png" alt=""></div>
+                    <div class="name_card">Nintendo eShop</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Nintendo_ProductCard_3-1 (1).png" alt=""></div>
+                    <div class="name_card">Nintendo Switch Online</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/FIFA23_Product-Card.png" alt=""></div>
+                    <div class="name_card">Points FIFA 23</div>
+                </div>
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Apex_Legends_Logo__ProductCard_-1.png" alt=""></div>
+                    <div class="name_card">Apex Legends coins</div>
+                </div>
+
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/PUBG_ProductCard_17-1.png" alt=""></div>
+                    <div class="name_card">PUBG Mobile UC</div>
+                </div>
+
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/Pokemon_Sword_And_Shield_ProductCard_-copy.png" alt=""></div>
+                    <div class="name_card">Pokemon</div>
+                </div>
+
+                <div class="card">
+                    <div class="img_card"><img class="card_img" src="./img/League_Of_Legends_ProductCard_61-1.jpg" alt=""></div>
+                    <div class="name_card">Leaguue of legends</div>
+                </div>
+
+
+                
+            </div>
+
+            <div class="more_product">
+                <span><a href="#footer_id">Plus de produits</a></span>
+            </div>
+                </div>
+        </div>
+   </div>
+<!------------------------------------COMMANDE-------------------->
+   <h2 class="title_o">Commande</h2>
+   <form  class="co"  id=”contact” onsubmit="return postToGoogle();">
+    <div class="order">
+        <div class="nom">
+            <label for="entry.2005620554"></label>
+            <fieldset >
+                <input  placeholder="Ton nom"
+                        type="text" 
+                        name="entry.1640730257" 
+                        data-name="LastName" 
+                        id="UserLastName" 
+                        required>
+              <!-- </fieldset>
+              <label for="entry.1563551537"></label>
+                <fieldset>
+                <input  placeholder="Ton Prenom"
+                type="text" 
+                name="entry.1563551537" 
+                data-name="Name" 
+                id="Name" 
+                required>
+             </fieldset>-->
+            
+          
+        </div>
+        <div class="coordonee">
+            <fieldset>
+                <input 
+                        placeholder="Ton adresse mail" 
+                        type="email" 
+                        name="entry.1045781291" 
+                        data-name="Email" 
+                        id="Email" 
+                        required>
+              </fieldset>
+            <fieldset>
+                <input 
+                        placeholder="Your Phone Number" 
+                        type="tel" 
+                        name="entry.1065046570" 
+                        data-name="Phone" 
+                        id="Phone" 
+                        required>
+              </fieldset>
+        </div>
+        <div class="order_t">
+            <fieldset>
+                <label for="entry.1166974658">Choix du procuit: </label>
+                <select name="entry.1166974658" class="produit_t" id="UserProdutc" type="select">
+                  <option value=" ">Choix du produit</option>
+                  <option value="Netflix">Netflix</option>
+                  <option value="Apple store">Apple store</option>
+                  <option value="Fortnite Vbuck">Fortnite Vbuck</option>
+                  <option value="Google play">Google play</option>
+                  <option value="Spotify">Spotify</option>
+                  <option value="Amazon">Amazon</option>
+                  <option value="Xbox">Xbox</option>
+                  <option value="PSN">PSN</option>
+                  <option value="Point FIFA">Point FIFA</option>
+                  <option value="Nintendo Eshop">Nintendo Eshop</option>
+                  <option value="Microsoft">Microsoft</option>
+                  <option value="Twitch">Twitch</option>
+                  <option value="Steam">Steam</option>
+                  <option value="Apex legeng coins">Apex legeng coins</option>
+                  <option value="League of Legend">League of Legend</option>
+              
+                  <option value="PUBG Mobile UC">PUBG Mobile UC</option>
+        
+        
+              </select>
+              </fieldset>
+        </div>
+
+        <div class="price">
+            <label for="entry.1375059268">Choix du Prix:</label>
+            <fieldset>
+                <select name="entry.1375059268" class="prix" onchange="price()" id="UserPrice" >
+                  <option value=".">Faites votre choix</option>
+                  <option value="10(">10 €</option>
+                  <option value="15(">15 €</option>
+                  <option value="20(">20 €</option>
+                  <option value="25(">25 €</option>
+                  <option value="30(">35 €</option>
+                  <option value="50(">50 €</option>
+                  <option value="100(">100 €</option>
+        
+                  <option value="10$">10 $</option>
+                  <option value="15$">15 $</option>
+                  <option value="20$">20 $</option>
+                  <option value="25$">25 $</option>
+                  <option value="30$">30 $</option>
+                  <option value="50$">50 $</option>
+                  <option value="100$">100 $</option>
+        
+                  <option value="100Z">100 ZAR</option>
+                  <option value="200Z">200 ZAR</option>
+                  <option value="300Z">300 ZAR</option>
+                  <option value="400Z">400 ZAR</option>
+                  <option value="500Z">500 ZAR</option>
+                  <option value="1000Z">1000 ZAR</option>
+              </select>
+              </fieldset>
+        </div>
+       
+        <div class="quantite">
+          
+            <fieldset>
+                <label for="quantite">  Quantite :</label>
+                 
+                <input type="number" name="entry.722397237" class="quantite_t" id="UserQuantity" 
+                      min="1" max="1000" step="1" value="0"  onchange="genPassword(), price()">
+                  
+             
+              </fieldset>
+
+        </div>
+        <div class="facture" >
+            <h4>Prix total </h4>
+            <h4>+ frais de service </h4>
+            <h5></h5>
+            <label for="prix_f"></label>
+            <fieldset>
+                <div class="button-17 pass" 
+                id="prix_f" 
+                name="entry.1680125036">
+              </div>
+              </fieldset>
+            <label for="prix_fc"></label>
+            <fieldset>
+                <div class="button-17 pass" id="prix_fc" name="entry.1384895702"></div>
+              </fieldset>
+        </div>
+       
+          
+        <fieldset>
+        <input 
+                placeholder="Type your message here...." 
+                data-name="Message" 
+                id="Message" 
+                name="entry.318066957">
+        </input>
+        <fieldset>
+            <div class="password">
+              <label for="entry.2066323353">Pin :</label>
+              <input type="text" name="entry.2066323353" placeholder="Create password" id="password" readonly>
+          </div>
+          </fieldset>
+            <input type="submit" class="button-17" value="Commander" id="submit" onclick="genPassword()" >
+          
+    </div>
+   </form>
+ 
+ 
+    
+   <div class="more_product">
+                
+    <span>About us</span>
+  
+   </div>
+
+
+   <!--------------------------------------FOOTER----------------------------------------------- -->
+  <div class="f" id="footer_id">
+    <div class="foot">
+
+        <span>Metode de paiment : </span>
+        <div class="methode_paiment">
+            <img src="./img/cash.webp" alt="cash money">
+            <img src="./img/aitel.png" alt="airtel money">
+            <img src="./img/vodacom.png" alt="vodacom money">
+            <img src="./img/orange.png" alt="orange money">
+           
+        </div>
+       
+       </div>
+    
+       <div class="info">
+
+        <div class="information">
+            <div class="left">
+                <i class="imgp fa-solid fa-handshake fa-2xl"></i>
+                <p class="bsb">BSB</p>
+            </div>
+                <div class="text_t">
+                    <p>Sur BSB, achetez une carte prépayée rapidement et facilement. 
+                        Il est  possible d'acheter vos jeux vidéo préférés grâce à 
+                        une carte prépayée jeux vidéo ou de télécharger vos applications 
+                        favorites avec une carte cadeau Musique, TV & Apps. Le paiement 
+                        sur BSB s'effectue avec un compte Paypal, par carte 
+                        bancaire, par service telephonique ( Airtel money, Orange Money, Mpesa) 
+                        mais egalement en cash pres de nos agents sur rendez-vous. 
+                        Votre code de recharge vous est envoyé (e-mail, Whatsapp, Telegram). 
+                        Facilitez et 
+                        sécurisez vos achats en ligne grâce à BSB.</p>
+                </div>
+        </div>
+       
+        <div class="contactez-nous">
+            <h1>Contactez-Nous</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeb2S2mDxXeYwHWt3ls6T1ZTiHFcJwd7nC0GosZORNBAac_6Q/viewform?embedded=true" class="forms">Chargement…
+
+            </iframe>
+           
+          <!--  <div class="id">
+                <input class= "search_n" type="text" name="search" placeholder="Nom">
+                <input class= "search_n" type="text" name="search" placeholder="Prenom">
+            </div>
+            <input class= "search_e"type="text" name="search" placeholder="Adresse e-mail">
+            <input class= "search_e"type="number" name="search" placeholder="numero de telephone">
+            <input class= "search"type="text" name="search" placeholder="tapez votre message">
+            <button class="button-17">Envoyer</button>-->
+        </div>
+       
+       </div>
+    
+       <div class="footer">
+        <a href="https://www.facebook.com/NkofuSport" target="_blank"><i class=' bx-border-circle bx bxl-facebook-circle bx-lg' ></i></a>
+    
+        <a href="#https://www.instagram.com/nkofu_sport/?hl=fr"><i  style="background: #f09433; 
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); " class='bx bxl-instagram bx-lg bx-border-circle' ></i></a>
+        <a href="tel:+48512851206"><i style="color: green;" class='bx bxl-whatsapp bx-lg bx-border-circle'></i></a>
+        <a href="tel:+48512851206"><i style="background: #0088cc; color:#fff" class='bx bxl-telegram bx-lg bx-border-circle' ></i></a>
+        <a href="tel:+48512851206"><i style="color:#fff; border:solid" class='bx bxl-gmail bx-lg bx-border-circle' ></i></a>
+    
+            
+       </div>
+
+       <div class="avis">
+    <div class="avis_t button-17">
+        <a href="">
+            <i class='bx bx-star bx-tada-hover'></i>
+            <i class='bx bx-star bx-tada-hover'></i>
+            <i class='bx bx-star bx-tada-hover'></i>
+            <i class='bx bx-star bx-tada-hover'></i>
+            <i class='bx bx-star bx-tada-hover'></i>
+        </a>
+    </div>
+      
+       </div>
+    
+  </div>
+ <!-- <label for="theme">Select theme: </label>
+  <select id="theme">
+    <option value="white">White</option>
+    <option value="black">Black</option>
+  </select>-->
+<p style="padding: 1px;">©BSB</p>
+   
+  
+
+
+<script>
+
+/*const select = document.getElementById("theme");
+const html = document.querySelector('html');
+document.body.style.padding = '10px';
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+select.addEventListener('change', () => select.value === 'black'
+  ? update('black', 'white')
+  : update('white', 'black')
+); */
+    function alert_t() {
+  alert("Section non disponible pour le moment");
+}
+        const arr = [10,15,20,25,30,50,100];
+        const arr_rand = [100,200,300,400,500,1000];
+        const prix_euro = [13,19,24,30,36,60,118];
+        const prix_dollars = [12,15,23,29,34,56,111];
+        const prix_rand=[8,14,21,27,34,67];
+
+
+    function price(){
+        var choice = document.getElementById("UserPrice");
+        var quantite = document.getElementById("UserQuantity").value;
+        var nombre = quantite.match(/\d+/);
+        var prix = choice.value;
+        var price, match, price_C, i;
+        var flag = 0;
+        if(prix[prix.length-1]==='(') {
+            
+            match = prix.match(/\d+/);
+            price_c = parseInt(match[0]) ;
+
+            for(i=0;i<arr.length;i++){
+
+                if(price_c === arr[i]){
+                    break;
+                }
+            }
+
+            price = prix_euro[i];
+            
+            
+        }
+
+        else if(prix[prix.length-1]==='$'){
+            match = prix.match(/\d+/);
+            price_c = parseInt(match[0]) ;
+
+            for(i=0;i<arr.length;i++){
+
+                if(price_c === arr[i]){
+                    break;
+                }
+            }
+
+            price = prix_dollars[i];
+        }
+        else if(prix[prix.length-1]==='Z'){
+            match = prix.match(/\d+/);
+            price_c = parseInt(match[0]) ;
+
+            for(i=0;i<arr_rand.length;i++){
+
+                if(price_c === arr_rand[i]){
+                    break;
+                }
+            }
+
+            price = prix_rand[i];
+        }
+        else if(prix[prix.length-1]==='.'){
+        
+            price = 0;
+        }
+        document.getElementById("prix_f").innerHTML =price*quantite + ' $';
+        document.getElementById("prix_fc").innerHTML =price*quantite*2000 + ' Fc';
+    }
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 3 seconds
+    }
+    function postToGoogle() {
+        
+        var name = $("#UserLastName").val();
+       
+        var prenom = $("#UserName").val();
+        var email = $("#Email").val();
+        var PhoneNumber = $("#Phone").val();
+        var Product  = $("#UserProdutc").val();
+        var price = document.getElementById("UserPrice").value;
+        var quantite = $("#UserQuantity").val();
+        var PriceUs;
+        var PriceFc;
+        var Comment = $("#Message").val();
+        var pin = $("#password").val();
+
+        console.log(name);
+        console.log(prenom);
+        console.log(email);
+        console.log(PhoneNumber);
+        console.log(Product);
+       
+        console.log(quantite);
+       
+        console.log(Comment);
+       
+        console.log(pin)
+        var price_C, match,disp;
+        if(price[price.length-1]==='(') {
+            
+            match = price.match(/\d+/);
+            
+            price_c = parseInt(match[0]) ;
+
+            for(i=0;i<arr.length;i++){
+
+                if(price_c === arr[i]){
+                    break;
+                }
+            }
+
+            price = prix_euro[i];
+            disp = price_c + " €";
+            console.log(disp);
+        }
+        else if(price[price.length-1]==='$') {
+            
+            match = price.match(/\d+/);
+            
+            price_c = parseInt(match[0]) ;
+
+            for(i=0;i<arr.length;i++){
+
+                if(price_c === arr[i]){
+                    break;
+                }
+            }
+
+            price = prix_dollars[i];
+            disp = price_c + " $";
+            console.log(disp);
+        }
+        else if(price[price.length-1]==='Z') {
+            
+            match = price.match(/\d+/);
+            price_c = parseInt(match[0]) ;
+
+            for(i=0;i<arr_rand.length;i++){
+
+                if(price_c === arr_rand[i]){
+                    break;
+                }
+            }
+
+            price = prix_rand[i];
+            disp = price_c + " ZAR";
+            console.log(disp);
+        }
+        PriceUs = price*quantite;
+        PriceFc = PriceUs*2000;
+      
+        var dispUS = PriceUs + " $";
+        console.log(PriceUs);
+
+        var dispFc  = PriceFc + " Fc";
+        console.log(dispFc);
+        
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLScP25zlydGAi_1uIogG_O-ohCt2snuvYDqHdtILvmZ-XpgxLA/formResponse",
+          
+        //add your google form generated numbers below which are also the 'names' of your inputs     
+        data: {
+        
+          "entry.2005620554": name,
+          "entry.1563551537": prenom,
+          "entry.1045781291": email,
+          "entry.1065046570": PhoneNumber,
+          "entry.1166974658": Product,
+          "entry.1375059268": disp,
+          "entry.722397237": quantite,
+          "entry.1680125036": dispUS,
+          "entry.1384895702": dispFc,
+          "entry.318066957": Comment,
+          "entry.2066323353":pin
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+         
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+         
+        }
+      });
+      alert("commande reussie")
+      return false;
+    }
+
+    var password=document.getElementById("password");
+
+    function genPassword() {
+    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var passwordLength = 4;
+    var password = "";
+ for (var i = 0; i <= passwordLength; i++) {
+   var randomNumber = Math.floor(Math.random() * chars.length);
+   password += chars.substring(randomNumber, randomNumber +1);
+  }
+        document.getElementById("password").value = password;
+ }
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
