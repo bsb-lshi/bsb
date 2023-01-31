@@ -536,19 +536,18 @@ align-self: center;
 }
 
 .nom{
-  margin: 8px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
-  padding: 8px;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   height: 100%;
-  margin: 8px;
   
-  gap: 5px;
 }
 
 #UserLastName, #Name,#Email, #Phone{
-  width: 100%;
+  width: 99%;
   height: 30px;
   padding: 2%;
 }
@@ -567,11 +566,12 @@ align-self: center;
   display: flex;
   align-items: center;
   justify-content:space-between;
-  width: 100%;
+  width: 95%;
   height: 100%;
   padding: 8px;
   margin: 8px;
   gap: 5%;
+  
 }
 
 .order_t{
@@ -853,6 +853,7 @@ height: 100%;
 
 .password{
   margin-top: 10px;
+  
 }
 
 .password_t{
@@ -862,7 +863,16 @@ height: 100%;
 }
 /*----------------------media*/
 @media screen and (max-width:750px){
+  .password{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+  }
+
+  
   body{
     
     margin-left: 10%;
@@ -1034,7 +1044,7 @@ background-color: yellow;
 
 .facture>h5{
   border: solid;
-  width:99%;
+  width:98%;
 
 }
 
