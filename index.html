@@ -326,7 +326,7 @@
 <!------------------------------------COMMANDE-------------------->
    <h2 class="title_o">Commande</h2>
    <form  class="co"  id=”contact” onsubmit="return postToGoogle();">
-    <div class="order">
+    <div class="order" id="screem" >
         <div class="nom">
             <label for="entry.2005620554"></label>
             <fieldset >
@@ -434,7 +434,7 @@
                 <label for="quantite">  Quantite :</label>
                  
                 <input type="number" name="entry.722397237" class="quantite_t" id="UserQuantity" 
-                      min="1" max="1000" step="1" value="0"  onchange="genPassword(), price()">
+                      min="1" max="1000" step="1" value="0"  onchange="price()">
                   
              
               </fieldset>
@@ -471,7 +471,7 @@
     </fieldset>
         <fieldset>
             <div class="password">
-              <label for="entry.2066323353">Pin :</label>
+              <label for="entry.2066323353">Code de recuperation :</label>
               <input type="text" name="entry.2066323353" placeholder="PIN" id="password" readonly>
           </div>
           </fieldset>
@@ -479,9 +479,10 @@
           
     </div>
    </form>
- 
- 
-    
+   <p class="lien">Cliquez ici pour   <a href="https://forms.gle/26dmtBUEKWM7eac9A"  target="_blank" class="lien">*commandes manuelles</a></p>
+   <div id="output" style="background-color: green;"></div>
+  <!-- <button  onclick="printELement()">kdkkdkd</button>-->
+   
    <div class="more_product">
                 
     <span>About us</span>
@@ -824,7 +825,7 @@ select.addEventListener('change', () => select.value === 'black'
          
         }
       });
-      alert("commande reussie")
+      alert("commande reussie votr code de recuperation est \n" + pin)
       return false;
     }
 
@@ -841,7 +842,23 @@ select.addEventListener('change', () => select.value === 'black'
         document.getElementById("password").value = password;
  }
 
+ function printELement(){
+    var name = $("#UserLastName").val();
+    document.title = "Commandes"+name;
+    var divContents = document.getElementById("screem").innerHTML;
+    var pic = window.open('', '', 'height=500, width=500');
+
+    pic.document.write(divContents);
+
+    pic.document.close();
+
+    pic.document.title="Commandes"+name;
+    pic.print();
+
+}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 </body>
 </html>
