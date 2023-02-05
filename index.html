@@ -323,6 +323,34 @@
                 </div>
         </div>
    </div>
+
+   <!-----------------------------TUTO---------------------------->
+  
+
+   <div id="output" style="background-color: green;"></div>
+  <!-- <button  onclick="printELement()">kdkkdkd</button>-->
+  <div class="more_product">
+                
+    <span>Comment se procurer nos produits</span>
+   
+   </div>
+   
+    <div  class="tuto">
+    <p><span class="step">1</span> Faites vos commandes dans la section commandes </p>
+    <p><span class="step">2</span> Enregistrez les codes de recuperations </p>
+    <p><span class="step">3</span> Rendez-vous a notre point de recuperation ou pres de nos distributeur </p>
+    <p><span class="step">4</span> Faites vos paiments </p>
+    <p><span class="step">5</span> Obtenez votre commandes </p>
+    </div>
+
+<div  class="tuto1">
+     <Address> Adress : 
+        <a href="https://goo.gl/maps/5pDogGFVKq5K55kj7" target="_blank" style="color:black">
+         <div class="shop">Boutique Attraction, Galerie du petrole</div>
+         <br>109-91 Avenue Sendwe, Lubumbashi, République démocratique du Congo
+        </a>
+    </Address>
+</div>
 <!------------------------------------COMMANDE-------------------->
    <h2 class="title_o">Commande</h2>
    <form  class="co"  id=”contact” onsubmit="return postToGoogle();">
@@ -479,26 +507,6 @@
             <p class="lien">Cliquez ici pour   <a href="https://forms.gle/26dmtBUEKWM7eac9A"  target="_blank" class="lien">*commandes manuelles</a></p>
     </div>
    </form>
-  
-   <div id="output" style="background-color: green;"></div>
-  <!-- <button  onclick="printELement()">kdkkdkd</button>-->
-  <div class="more_product">
-                
-    <span>Cooment se procurer nos produits  pour les paiemnts en cash</span>
-   
-   </div>
-   
-   <div  class="tuto">
-    <p><span class="step">1</span> Faites vos commandes dans la section commandes </p>
-    <p><span class="step">2</span> Enregistrez les codes de recuperations </p>
-    <p><span class="step">3</span> Rendez-vous a notre point de recuperation ou pres de nos distributeur </p>
-    <p><span class="step">4</span> Faites vos paiments </p>
-    <p><span class="step">5</span> Obtenez votre commandes </p>
-</div>
-
-<div> <Address> Adress : <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D0%252C0%26fbclid%3DIwAR3s4yebvVTuGd3JEiJEv6dxgD6luEqq7RolcnbpQ5g1GuO0UtK4teeXpDY&h=AT0nV45FowS--ELtMHZXSBjgrZ1ybjTK7pzehfx85HY-zQRRWiIVAerGffDBLursKcXHYoUt_vql5x6Llb5jt7muwkD-F7fLAuhaD_k9n_5-Lg92FeBlIuLP_lCfKw" target="_blank" style="color:black">
-    <div style="font-size: 120%;">Boutique Attraction</div>, Avenue Sendwe, Galerie du petrole, Lubumbashi, Republique democratique du Congo
-</a></Address></div>
    <div class="more_product">
                 
     <span>About us</span>
@@ -841,7 +849,7 @@ select.addEventListener('change', () => select.value === 'black'
          
         }
       });
-      alert("commande reussie votr code de recuperation est \n" + pin)
+      alert("commande effectuee\nVotre code de recuperation est : " + pin)
       return false;
     }
 
