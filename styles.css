@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     font-family: 'sofia-pro', arial;
     font-size: 115%;
-    color: #595959;;
+    color: #595959;
     padding: 3%;
     scroll-behavior: smooth;
     margin-left: 18%;
@@ -50,14 +50,14 @@ body{
   
 }
 .left>.imgp{
-  color: 	rgba(55, 122, 209, 0.925);
+  color: 	rgba(0, 102, 255);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bsb{
-  color: 	rgba(55, 122, 209, 0.925);
+  color: 	rgba(0, 102, 255);
   width: 100%;
   height:   auto;
   font-size: 200%;
